@@ -1,26 +1,32 @@
 {
   "name": "micro-observe-app",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/polyfill": "^7.2.5",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
     "react-scripts": "2.1.8"
   },
   "scripts": {
     "backend": "json-server --watch db.json --port 3004",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "prettier": "prettier --single-quote --trailing-comma es5 --write src/**/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "and_chr 68",
+    "chrome 70",
+    "ios_saf 12.0-12.1",
+    "safari 12"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.4",
+    "prettier": "1.16.4"
+  }
 }
