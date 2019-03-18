@@ -1,0 +1,19 @@
+.Nav {
+    text-align: center;
+    display: flex;
+    height: 48px;
+    width: 100%;
+    flex-direction: row;
+    line-height: 48px;
+    margin: 12px 0;
+}
+.Nav > div {
+    border: darkgray solid 2px;
+    width: 100%;
+    margin: 0 12px;
+    border-radius: 12px;
+}
+
+.Nav > div.active {
+    background-color: lightgray;
+}
