@@ -11,7 +11,7 @@ class Video extends Component {
                 this.refs.video.srcObject = stream 
                 this.activeStream = stream
                 // set stop to window for dev
-                window.stop = this.stopStream;
+                // window.stop = this.stopStream;
             })
             .catch(e => console.error('video error', e));
 

@@ -3,9 +3,8 @@ import { pages } from '../../app-const';
 import './nav.css';
 
 class Nav extends Component {
-    handleOnClick = (event) => {
-        const selectedIndex = event.target.dataset.key;
-        this.props.handlePageChange(selectedIndex)
+    handleOnClick = (key, event) => {
+        this.props.handlePageChange(key)
     }
 
     render() {
@@ -14,9 +13,7 @@ class Nav extends Component {
             <div className="Nav">
                 {pages.map((page, idx) => 
                         <div 
-                            onClick={this.handleOnClick} 
-                            data-key={idx} 
-                            key={idx} 
+                            onClick={this.handleOnClick.bind(this, idx)} 
                             className={`${page.pageName} ${page.componentName === activeComponent ? 'active' : ''}`}
                         >
                             {page.pageName}

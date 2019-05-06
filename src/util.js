@@ -5,7 +5,6 @@ export function hasGetUserMedia() {
 
 export function capture(video, options){
     options = options || {};
-    console.log('options', options)
     options.width = options.width || 640;
     options.height = options.height || 425;
 
